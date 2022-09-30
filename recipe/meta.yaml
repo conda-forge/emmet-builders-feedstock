@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.36.3" %}
+{% set version = "0.36.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/materialsproject/emmet/archive/v{{ version }}.tar.gz
-  sha256: 4f95d2296996352fe3e8dd95bd68880d34c0da08d7f54130328d12ebf1b33d80
+  sha256: f5d62233a1a8cd2e00dbc11f159f157113157acc4fb7776252f5759ec3c5978b
 
 build:
   noarch: python
