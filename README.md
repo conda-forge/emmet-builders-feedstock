@@ -3,7 +3,7 @@ About emmet-builders
 
 Home: https://github.com/materialsproject/emmet
 
-Package license: BSD-3-Clause & MIT & Apache-2.0 & BSD-2-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emmet-builders-feedstock/blob/main/LICENSE.txt)
 
