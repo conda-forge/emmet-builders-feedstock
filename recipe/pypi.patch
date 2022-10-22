@@ -18,7 +18,7 @@ index 1e75e78..5db2f3d 100644
 -        "root": "..",
 +        "root": ".",
          "relative_to": __file__,
--        "write_to": "emmet-builders/_version.py",
+-        "write_to": "emmet-builders/emmet/builders/_version.py",
 +        "write_to": "emmet/builders/_version.py",
          "write_to_template": '__version__ = "{version}"',
          "fallback_version": fallback_version,
