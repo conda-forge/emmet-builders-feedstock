@@ -22,7 +22,7 @@ requirements:
   run:
     - emmet-core
     - maggma >=0.47.3
-    - matminer >=0.7.3
+    - matminer >=0.7.3,<0.8
     - python >=3.8
 
 test:
