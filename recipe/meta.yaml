@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.68.0" %}
+{% set version = "0.69.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-builders-{{ version }}.tar.gz
-  sha256: 9035254a8ebfcb23ee5a3b0c3c5b38385baee602124c6239e1762ef2d08bc898
+  sha256: 05cdcb52729a3e0444d8d0ebad10b640163109e6244a7dcd7dd063ef77f5737d
 
 build:
   noarch: python
@@ -21,9 +21,10 @@ requirements:
     - setuptools-scm
   run:
     - emmet-core
-    - maggma >=0.49.17
+    - maggma >=0.57.0
     - matminer >=0.7.3,<0.8
     - python >=3.8
+    - pymatgen <=2023.9.10
 
 test:
   imports:
