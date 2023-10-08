@@ -11,25 +11,24 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools-scm
+    - pip
   run:
+    - python >=3.9
     - emmet-core
     - maggma >=0.57.0
     - matminer >=0.7.3,<0.8
-    - python >=3.8
-    - pymatgen <=2023.9.10
 
 test:
   imports:
     - emmet.builders
-    - emmet.builders.feff
+    - emmet.builders.abinit
   commands:
     - pip check
   requires:
@@ -39,8 +38,7 @@ about:
   home: https://github.com/materialsproject/emmet
   summary: Builders for the Emmet Library
   license: BSD-3-Clause
-  license_file:
-    - LICENSE
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
