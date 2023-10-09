@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - emmet-core
     - maggma >=0.57.0
-    - matminer >=0.7.3
+    - matminer >=0.7.3,<0.8
 
 test:
   imports:
