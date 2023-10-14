@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.70.1" %}
+{% set version = "0.70.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-builders-{{ version }}.tar.gz
-  sha256: cebe26219fe6ba6c0a452d74ef7c8a7a99517c09be42ada55b64d227c291583e
+  sha256: 43a820bf285531a85ee3500da0593b408ffaaa2f56dc37df3c56070d4546c6cd
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - emmet-core
     - maggma >=0.57.0
-    - matminer >=0.7.3,<0.8
+    - matminer >=0.7.3
 
 test:
   imports:
