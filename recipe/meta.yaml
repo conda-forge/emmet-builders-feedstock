@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - python >=3.9
     - emmet-core
     - maggma >=0.57.0
-    - matminer >=0.7.3,<0.8
+    - matminer >=0.7.3
 
 test:
   imports:
