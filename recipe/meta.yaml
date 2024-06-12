@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.83.8" %}
+{% set version = "0.83.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-builders-{{ version }}.tar.gz
-  sha256: 1a2cfaad5c0104c554f440c9aa67b0d613a6898eafa5d9cbe1810520286818be
+  sha256: 9ab88d55ba2adac4226d02dffac26c044a638c531437b5cc156e496b7e3545af
   patches:
     - setup.patch
 
@@ -22,6 +22,8 @@ requirements:
     - setuptools-scm
     - pip
   run:
+    - mdanalysis >=2.7.0
+    - solvation_analysis >=0.4.0
     - python >=3.9
     - emmet-core
     - maggma >=0.57.6
