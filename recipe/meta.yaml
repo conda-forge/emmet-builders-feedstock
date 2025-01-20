@@ -20,6 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools-scm
+    - setuptools
     - pip
   run:
     - mdanalysis >=2.7.0
