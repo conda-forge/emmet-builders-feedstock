@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.84.10" %}
+{% set version = "0.85.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 12cfffe995546f1b45d1f9fa6bd82c408876864389e8d9a6ad59b28114bfb799
+  sha256: 2c484e05d7565c37d26b0e072b5a44ce081e2691b7faebb4787d872b7e860289
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - pip
   run:
-    - pymatgen-io-validation >=0.1.0
+    - pymatgen-io-validation >=0.1.1
     - mdanalysis >=2.7.0
     - solvation_analysis >=0.4.0
     - python >={{ python_min }}
