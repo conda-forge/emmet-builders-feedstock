@@ -22,8 +22,6 @@ requirements:
     - pip
   run:
     - pymatgen-io-validation >=0.1.1
-    - mdanalysis >=2.7.0
-    - solvation_analysis >=0.4.0
     - python >={{ python_min }}
     - emmet-core >=0.85
     - maggma >=0.57.6
