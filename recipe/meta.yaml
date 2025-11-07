@@ -1,5 +1,6 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.85.1" %}
+{% set version = "0.86.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 876524f4b622d02ddbbc7b04fc9eb8404354f965128795d9c7db14dc6bb056ea
+  sha256: 1d44eaffd1045ea549f343868b44be6295a636f79b09dd222be941b95509e9d6
 
 build:
   noarch: python
