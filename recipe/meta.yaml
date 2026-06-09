@@ -1,5 +1,5 @@
 {% set name = "emmet-builders" %}
-{% set version = "0.86.4" %}
+{% set version = "0.87.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4098a32cfff60f977637a2816426a98a89b7de4d7ce4d860d8fadb32e810ffd0
+  sha256: 0d21f615c8d313dd75052670b52b51c4b08a22f8ab5bb951ae89ce2c30b52365
 
 build:
   noarch: python
@@ -24,14 +24,13 @@ requirements:
   run:
     - pymatgen-io-validation >=0.1.1
     - python >={{ python_min }}
-    - emmet-core >=0.85
+    - emmet-core >=0.86.1
     - maggma >=0.57.6
     - matminer >=0.10.0
 
 test:
   imports:
     - emmet.builders
-    - emmet.builders.abinit
   commands:
     - pip check
   requires:
