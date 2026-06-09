@@ -31,7 +31,6 @@ requirements:
 test:
   imports:
     - emmet.builders
-    - emmet.builders.abinit
   commands:
     - pip check
   requires:
