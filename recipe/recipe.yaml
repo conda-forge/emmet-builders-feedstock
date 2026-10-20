@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: emmet-builders
-  version: 0.87.3
+  version: 0.88.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4e5303abb15bee8dd0aa3809068026a9b4fe438c2852633fe186fc6643098554
+  sha256: 54a5a30556a172ab02e3307c1483f9289c201f389e9b8c67c1b2bd4aa3806ee8
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - emmet-core >=0.87.1
+    - emmet-core >=0.87.3rc
     - pymatgen >=2026.9.24
 tests:
   - python:
