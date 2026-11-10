@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: emmet-builders
-  version: "0.88.1"
+  version: "0.88.2"
   python_min: "3.12"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: e79995c660caf59c5ee3b0ca02f1477e4484d2f0e0ebb29c622cd04e5acbac8b
+  sha256: fee7e0d30a2d44d29d410d080f91a17aa93f844e8063c22f330c604842d02ef2
 
 build:
   number: 0
